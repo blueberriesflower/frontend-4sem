@@ -1,6 +1,5 @@
-/* Общие стили */
 body {
-    font-family: sans-serif;
+    font-family: var(--main-font);
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
@@ -14,7 +13,6 @@ body {
     border-radius: 5px;
 }
 
-/* Стили для хедера */
 header {
     background-color: #a7d9ed;
     padding: 10px;
@@ -22,7 +20,16 @@ header {
     border-radius: 5px 5px 0 0;
 }
 
-/* Стили для контента */
+.main-block img {
+    width: 200px;
+    height: auto;
+    padding: 10px;
+}
+
+h2 {
+    font-family: var(--secondary-font);
+}
+
 .content {
     display: flex;
     padding: 20px;
@@ -60,4 +67,9 @@ footer {
     padding: 10px;
     text-align: center;
     border-radius: 0 0 5px 5px;
+}
+
+:root {
+    --main-font: 'Montserrat', sans-serif;
+    --secondary-font: 'Open Sans', sans-serif;
 }
