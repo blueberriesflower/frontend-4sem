@@ -1,13 +1,13 @@
 <script setup>
 const phoneNumber = '+7 (800) 900-90-90';
-import HomeIcon from '~/assets/logo.svg';
+import HomeIcon from '~/assets/Frame.svg';
 import PhoneIcon from '~/assets/phone.svg';
 </script>
 <template>
   <header class="header">
     <div class="header__container">
       <div class="header__logo">
-        <img :src="HomeIcon" alt="Home" class="header__icon">zagdom</div>
+        <img :src="HomeIcon" alt="Home" class="header__icon"></div>
       
       <nav class="header__nav">
         <a href="#" class="header__link">Реализованные проекты</a>
