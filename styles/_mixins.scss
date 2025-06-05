@@ -1,0 +1,6 @@
+@mixin shared-styles {
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  color: white;
+  transition: all 0.3s ease;
+}

@@ -1,0 +1,22 @@
+@use "variables";
+@use "mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .content {
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+}

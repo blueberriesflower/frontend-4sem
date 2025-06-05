@@ -1,27 +1,25 @@
-<template>
-    <div class="banner">
-      <h2>Banner</h2>
-      <button>Button</button>
-    </div>
-  </template>
-  
-  <style scoped lang="scss">
-  .banner {
-    background-color: green;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    h2 {
-      font-size: 3em;
-      margin-bottom: 20px;
-    }
-    button {
-      background-color: white;
-      color: green;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
+<script setup>
+defineProps({
+  text: {
+    type: String,
+    required: true
   }
-  </style>
+})
+</script>
+
+<template>
+  <div class="banner">
+    <h1>{{ text }}</h1>
+  </div>
+</template>
+
+<style lang="scss" scoped>
+@use "~/styles/mixins" as *;
+
+.banner {
+  @include shared-styles;
+  background-color: var(--primary-color);
+  padding: 2rem;
+  text-align: center;
+}
+</style>
